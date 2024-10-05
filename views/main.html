@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Image Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/style.css">
+
+    <!-- Optional Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Image Gallery</h1>
+    </header>
+
+    <div class="container">
+        <!-- Main Gallery Content -->
+        <main id="gallery">
+            <!-- Images will be dynamically inserted here -->
+        </main>
+
+        <!-- Sidebar for Ads -->
+        <aside class="sidebar">
+            <div class="ad-space">
+                <h3>Advertisement</h3>
+                <p>Your ad could be here!</p>
+            </div>
+            <div class="ad-space">
+                <h3>Sponsored Content</h3>
+                <p>Learn more about cool products.</p>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Modal for image enlargement -->
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <div class="image-container">
+                <button class="prev" id="prev-btn">&#10094;</button> <!-- Left arrow -->
+                <div class="image-wrapper">
+                    <img id="modal-image" class="modal-image">
+                </div>
+                <button class="next" id="next-btn">&#10095;</button> <!-- Right arrow -->
+            </div>
+            <div class="image-details">
+                <div id="caption" class="image-name"></div>
+                <div id="description" class="image-description"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Modern Image Gallery</p>
+    </footer>
+
+    <script src="/public/script.js"></script>
+</body> 
+</html>
